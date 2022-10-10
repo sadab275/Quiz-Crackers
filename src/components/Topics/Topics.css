@@ -23,3 +23,15 @@
     gap: 20px;
     margin-left: 35px;
 }
+
+@media screen and (max-width:778px) {
+    .tests-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .tests-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
