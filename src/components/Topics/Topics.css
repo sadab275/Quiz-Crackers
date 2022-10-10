@@ -1,0 +1,25 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container img {
+
+    border: 1px solid seashell;
+    border-radius: 30%;
+    padding: 15px;
+
+}
+
+.title-writeup {
+    color: cornflowerblue;
+
+}
+
+.tests-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-left: 35px;
+}
