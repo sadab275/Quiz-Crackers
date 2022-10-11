@@ -33,10 +33,24 @@
     font-size: 30px;
     color: #1b4866;
 
+
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .question-container {
     border: 1px solid silver;
     border-radius: 25px;
     margin: 50px 90px;
+
+}
+
+.eye {
+    width: 35px;
+    height: 35px;
+    /* margin-left: 95px; */
 }

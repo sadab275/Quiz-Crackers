@@ -18,6 +18,7 @@ const Header = () => {
                     <Navbar.Brand as={Link} to={'/'}>Skill Assessment</Navbar.Brand>
                     <div className='linkstochange'>
                         <Nav className="me-auto ">
+                            <Nav.Link as={Link} to={'/'}>Home</Nav.Link>
                             <Nav.Link as={Link} to={'/topics'}>Topics</Nav.Link>
                             <Nav.Link as={Link} to={'/statistics'}>Statistics</Nav.Link>
                             <Nav.Link as={Link} to={'/blog'}>Blog</Nav.Link>
