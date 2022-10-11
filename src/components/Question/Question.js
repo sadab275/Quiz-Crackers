@@ -4,7 +4,15 @@ const Question = ({ question }) => {
     console.log(question);
     return (
         <div>
-            <h2>This is question{question.question}</h2>
+            <div className='question'>
+                <h5>This is question{question.question}</h5>
+            </div>
+            <div className='options'>
+                {
+                    question.options.map(option => <p>{option}</p>)
+                }
+            </div>
+
         </div>
     );
 };
