@@ -9,10 +9,19 @@ const Question = ({ question }) => {
     const { correctAnswer } = question;
     console.log(correctAnswer);
 
-    const eyehandler = (correctAnswer) => toast(`${correctAnswer}`, {
+    const eyehandler = (correctAnswer) => toast(`Correct Answer is : ${correctAnswer}`, {
         position
             : 'top-center'
     });
+    const btnselect = (option) => {
+        if (option === correctAnswer) {
+            toast("Your answer is correct", { position: 'top-center' });
+
+        }
+        else {
+            toast("Your answer is incorrect", { position: 'top-center' })
+        }
+    };
 
 
     return (
@@ -25,7 +34,7 @@ const Question = ({ question }) => {
                 {
                     question.options.map(option =>
                         <div className='options'>
-                            <button className='btn'>{option}</button>
+                            <button onClick={() => btnselect(option)} className='btn'>{option}</button>
                             {/* <p>{option}</p> */}
                         </div>
                     )
