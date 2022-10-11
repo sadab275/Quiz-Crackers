@@ -12,7 +12,7 @@ import Topic from '../Topic/Topic';
 
 const Topics = () => {
     const tests = useLoaderData();
-    console.log(tests);
+    // console.log(tests);
     return (
         <div>
             <div className='title-container'>
@@ -20,7 +20,8 @@ const Topics = () => {
                     <Image thumbnail src={img1}></Image>
                 </div>
                 <div className='title-writeup'>
-                    <h3>Let's see about your skills on different Languages{tests.data.length}</h3>
+                    <h3>Let's see about your skills on different Languages</h3>
+                    {/* {tests.data.length} */}
                 </div>
             </div>
             <h4>This is Topics</h4>
