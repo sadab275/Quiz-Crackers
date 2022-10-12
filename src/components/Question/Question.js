@@ -27,7 +27,7 @@ const Question = ({ question }) => {
     return (
         <div className='question-container'>
             <div className='question'>
-                <h5>{question.question}</h5>
+                <h5>Quiz :{question.question}</h5>
                 <EyeIcon onClick={() => eyehandler(correctAnswer)} className=" h-1 w-1text-blue-500 eye" />
             </div>
             <div className='options'>
